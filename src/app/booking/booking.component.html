@@ -1,0 +1,26 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+  <h1 class="h2">Reservas</h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+    <button class="btn btn-sm btn-outline-secondary">
+      Nova Reserva
+    </button>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col"
+            sortable="name"
+            (sort)="onSort($event)">Café</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of dataSource">
+        <th scope="row">{{ booking.id }}</th>
+        <td>{{ booking.coffee }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
