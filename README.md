@@ -14,3 +14,7 @@ Banana Web Application
 - npm install
 - npm start
 - acessar: http://localhost:4200
+
+Deverá ser apresentada a tela abaixo:
+
+![](sistema.jpg)
